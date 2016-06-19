@@ -1,0 +1,183 @@
+$icon-font-path: "/bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+
+@import 'bootstrap-sass-official/assets/stylesheets/bootstrap.scss';
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: url('http://narendr.in/grey_wash_wall.png') fixed;
+}
+html {
+  overflow-y: scroll;
+}
+
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.bookcontainer{
+  min-height:280px;
+}
+a.listbook {
+    margin: 2px;
+    border: 1px solid #ccc;
+    display: block;
+    padding: 8px;
+    background: #fff;
+    min-height: 265px;
+}
+ul.pagination {
+    display: table;
+    margin: 15px auto;
+}
+.scrollToTop {
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+    color: #fff;
+    border-radius: 10px;
+    cursor:pointer;
+}
+span.glyphicon.glyphicon-circle-arrow-up {
+    font-size: 35px;
+}
+.listbook img {
+    display: table;
+    margin: 0 auto;
+}
+span.title.headline {
+    font-size: 12px;
+    text-align: center;
+    display: block;
+    margin: 10px 0px;
+}
+button#showmore {
+    padding: 10px 4em;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 10px auto;
+    display: table;
+    font-size: 14px;
+}
+.no-padding-left{
+  padding-left:0px;
+}
+.no-padding-right{
+  padding-right:0px;
+}
+span.loader {
+    display: table;
+    margin: 23px auto;
+}
+h4.noItems {
+    display: table;
+    margin: 10px auto;
+    background: #ccc;
+    padding: 20px;
+}
+span.glyphicon.glyphicon-heart.pull-right {
+    position: absolute;
+    color: #F93008;
+    font-size: 18px;
+    right: 22px;
+    /* bottom: 0; */
+    top: 7px;
+    cursor: pointer;
+    background: #fff;
+}
+span.glyphicon.glyphicon-heart.pull-right.addToFav{
+    position: absolute;
+    color: #ccc;
+    font-size: 18px;
+    right: 22px;
+    /* bottom: 0; */
+    top: 7px;
+    cursor: pointer;
+    background: #fff;
+}
+/* Custom page header */
+.header {
+    /*border-bottom: 1px solid #e5e5e5;*/
+}
+
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+    padding-top: 19px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+    margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+    background: #efefef;
+  }
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+.scrollToTop {
+    color:#333;
+  }
+ span.glyphicon.glyphicon-heart.pull-right ,span.glyphicon.glyphicon-heart.pull-right.addToFav{
+    font-size: 2.5em;
+ } 
+} 

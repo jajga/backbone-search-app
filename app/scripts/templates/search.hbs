@@ -1,0 +1,20 @@
+<div class="row">
+   {{#each items}}
+	<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6  bookcontainer"  data-title="{{volumeInfo.title}}">
+        <a href="" class="listbook">
+			<img onerror="this.src='http://narendr.in/error.jpg'" src="{{volumeInfo.imageLinks.thumbnail}}" alt="{{volumeInfo.title}}" />
+			<span class="title headline">{{#stringshort volumeInfo.title}} {{/stringshort}}</span>
+
+		</a>
+
+		<span class="glyphicon glyphicon-heart pull-right addToFav"  data-id="{{id}}" data-img="{{volumeInfo.imageLinks.thumbnail}}" data-title="{{volumeInfo.title}}"></span>
+
+		<span class="glyphicon glyphicon-heart pull-right hide favactive"  data-id="{{id}}" data-img="{{volumeInfo.imageLinks.thumbnail}}" data-title="{{volumeInfo.title}}"></span>
+		
+		{{#favalid id @index}}
+			<span class="glyphicon glyphicon-heart pull-right "  data-id="{{id}}" data-img="{{volumeInfo.imageLinks.thumbnail}}" data-title="{{volumeInfo.title}}"></span>
+		{{/favalid}}	
+
+	</div>
+    {{/each}}
+</div>
